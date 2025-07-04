@@ -23,9 +23,6 @@ def main():
         except httpx.HTTPError as e:
             print(f'fetch: {e}', file=sys.stderr)
             sys.exit(1)
-        except Exception as e:
-            print(f'fetch: reading {url}: {e}', file=sys.stderr)
-            sys.exit(1)
 
 
 if __name__ == '__main__':
